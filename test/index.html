@@ -1,1 +1,136 @@
+   <!DOCTYPE html>
+<html>
+<head>
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:500|Rubik:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>CSS. Выравнивание и эффекты</title>
+</head>
+<body>
+	<div class="main">
+	<h2>Занятие 3</h2>
+	<h1>CSS. Выравнивание и эффекты</h1>
+	<br>
+	<br>
+	<br>
+	<h3>3.1 Выравнивание с FlexBox Layout</h3>
+		<h6 class="text text-1">Создадим контейнер с 5 широкими бловками.</h6>
+	<h6 class="text-1">Листинг 3.1: <b>body</b> (index.html)</h6>
+<div class="code-text">
+&lt;<span style="color:#09ac09">body</span>&gt;<br><span class="text-probel">
+		&lt;<span style="color:#09ac09">div</span> <span style="color:#5dd15d">class</span><span style="color:#808080">=</span><span style="color:#ee0606">"outer"</span>&gt;<br><span class="text-probel-1">
+			&lt;<span style="color:#09ac09">div</span> <span style="color:#5dd15d">class</span><span style="color:#808080">=</span><span style="color:#ee0606">"inner"</span>&gt;1&lt;/<span style="color:#09ac09">div</span>&gt;<br><span class="text-probel-1">
+			&lt;<span style="color:#09ac09">div</span> <span style="color:#5dd15d">class</span><span style="color:#808080">=</span><span style="color:#ee0606">"inner"</span>&gt;2&lt;/<span style="color:#09ac09">div</span>&gt;<br><span class="text-probel-1">
+			&lt;<span style="color:#09ac09">div</span> <span style="color:#5dd15d">class</span><span style="color:#808080">=</span><span style="color:#ee0606">"inner"</span>&gt;3&lt;/<span style="color:#09ac09">div</span>&gt;<br><span class="text-probel-1">
+			&lt;<span style="color:#09ac09">div</span> <span style="color:#5dd15d">class</span><span style="color:#808080">=</span><span style="color:#ee0606">"inner"</span>&gt;4&lt;/<span style="color:#09ac09">div</span>&gt;<br><span class="text-probel-1">
+			&lt;<span style="color:#09ac09">div</span> <span style="color:#5dd15d">class</span><span style="color:#808080">=</span><span style="color:#ee0606">"inner"</span>&gt;5&lt;/<span style="color:#09ac09">div</span>&gt;<br></span> </span> </span> </span> </span> </span>
+			<span class="text-probel">
+	&lt;/<span style="color:#09ac09">div</span>&gt;<br></span>
+&lt;/<span style="color:#09ac09">body</span>&gt;<br>
 
+<!-- 
+<span style="color:#09ac09"> - Это для div,body и т.д. зелёный
+<span style="color:#5dd15d"> - Это для class светло-зелёный
+<span style="color:#ee0606"> - Это для "" красный
+<span style="color:#808080"> - Это для -  корич
+<span style="color:#116062"> - Это для /*
+<span style="color:#800080"> - Это для .
+-->
+<form action="./assets/raw/index.html" target="_blank">
+	<button>RAW</button>
+</form>
+</div>
+	<div>
+	<hr>
+	<h6>Листинг 3.2: <b>style.css</b></h6>	
+	<div class="code-text">
+<span style="color:#09ac09">html</span><span style="color:#808080">,</span> <span style="color:#09ac09">body</span> {<br><span class="text-probel">
+	<span style="color:#116062">/* По умолчанию высота html и body определяется контентом. */</span><br></span><span class="text-probel">
+	<span style="color:#09ac09">height</span>: <span style="color:#808080">100</span><span style="color:#ee0606">%</span><br></span>
+}
+<br>
+<span style="color:#09ac09">body</span> {<br><span class="text-probel">
+	<span style="color:#116062">/* В большинстве браузеров body имеет margin равный 8px */</span><br></span><span class="text-probel">
+	<span style="color:#09ac09">margin</span>: <span style="color:#808080">0</span>;<br></span>
+}<br>
+.<span style="color:#800080">inner</span> {<br><span class="text-probel">
+	<span style="color:#09ac09">background-color</span>: <span style="color:#09ac09">red</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">margin</span>: 15<span style="color:#ee0606">px</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">border-radius</span>: 5<span style="color:#ee0606">px</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">width</span>: 300<span style="color:#ee0606">px</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">font-size</span>: 72 <span style="color:#ee0606">px</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">text-align</span>: <span style="color:#09ac09">center</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">color</span>: <span style="color:#09ac09">white</span>;<br></span>
+}<br>
+.<span style="color:#800080">outer</span> {<br>
+}
+<form action="./assets/raw/index-1.html" target="_blank">
+	<button>RAW</button>
+</form>
+	</div>
+	<br>
+<h6> <span class="text text-1">Как</span> и положена обычным блокам, каждый из них занимает отдельную строчку. <br>Добавим свойство <b><span style="color:#09ac09">display</span></b> в значении <b><span style="color:#09ac09">flex</span></b> к классу <b><span style="color:#09ac09">outer</span></b>. <br>Блоки сжались и выстроились на одну строку. <br>Уменьшите ширину окна браузера — блоки продолжат сжиматься, так как по умолчанию элементы внутри flex-контейнера располагаются на одной строке вне зависимости от заданных размеров.</h6>
+<h6><span class="text text-1">В</span> следущих подразделах мы познакомимся с некоторыми методами выравнивания при помощи <b><span style="color:#09ac09">FlexBox</span></b>.<br> Для лучшего понимания рекомендуется так же экспериментировать с резамерами окна.</h6>
+<hr>
+	<h3>3.1.1 flex-wrap</h3>
+<h6><span class="text text-1">Чтобы</span> сохранять размеры элементов внутри контейнера и при необходимостри переносить их на следующую строчку, использользуют свойство <b><span style="color:#09ac09">flex-wrap</span></b> в значении <b><span style="color:#09ac09">wrap</span></b></h6>
+	<h6 class="text-1">Листинг 3.3: <b><span style="color:#09ac09">.outer</b> (style.css)</h6>
+	<div class="code-text">
+.<span style="color:#800080">outer</span> {<br><span class="text-probel">
+	<span style="color:#09ac09">display</span>: <span style="color:#09ac09">flex</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">flex-wrap</span>: <span style="color:#09ac09">wrap</span>;<br></span>
+}
+<form action="./assets/raw/index-2.html" target="_blank">
+	<button>RAW</button>
+</form>
+</div>
+
+	<div>
+	<h2>Пример:</h2>
+	<h6>(Уменьшенная версия)</h6>
+<div>
+		<div class="outer">
+			<div class="inner">1</div>
+			<div class="inner">2</div>
+			<div class="inner">3</div>
+			<div class="inner">4</div>
+			<div class="inner">5</div>
+ 		</div>
+</div>
+<hr>
+	<h3>3.1.2 justify-content</h3>
+<h6><span class="text text-1">Мы</span> уже использовали свойство <b><span style="color:#09ac09">justify-content</span></b> со значением <b><span style="color:#09ac09">center</span></b>, центрирующее элементы по горизонтали.</h6>
+	<h6 class="text-1">Листинг 3.4: <b><span style="color:#09ac09">.outer</b> (style.css)</h6>
+	<div class="code-text">
+.<span style="color:#800080">outer</span> {<br><span class="text-probel">
+	<span style="color:#09ac09">display</span>: <span style="color:#09ac09">flex</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">flex-wrap</span>: <span style="color:#09ac09">wrap</span>;<br></span><span class="text-probel">
+	<span style="color:#09ac09">justify-content</span>: <span style="color:#09ac09">center</span>;<br></span>
+}
+<form action="./assets/raw/index-3.html" target="_blank">
+	<button>RAW</button>
+</form>
+</div>
+<h2>Пример:</h2>
+	<h6>(Уменьшенная версия)</h6>
+<div>
+		<div class="outer-1">
+			<div class="inner">1</div>
+			<div class="inner">2</div>
+			<div class="inner">3</div>
+			<div class="inner">4</div>
+			<div class="inner">5</div>
+ 		</div>
+</div>
+
+<span class="text-probel"><h6 class="text text-1">У этого свойства могут быть и другие значения</h6></span>
+	<ul>
+		<li><b><span style="color:#09ac09">flex-start</span></b>, используемое по умолчанию и прижимающие элементы к началу строки;</li>
+		<li><b><span style="color:#09ac09">flex-end</span></b>, прижимающее элементы к концу строки;</li>
+		<li><b><span style="color:#09ac09">space-around</span></b>, располагающее элементы равномерно на строке с равными отступами с обеих сторон;</li>
+		<li>и <b><span style="color:#09ac09">space-between</span></b>, похожее на <b><span style="color:#09ac09">space-around</span></b>, отличающееся лишь отсутвием отступов у крайних элементов.</li>
+	</ul>
+</div>
+</body>
+</html>
