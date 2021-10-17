@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+  height: 100%; /* https://www.youtube.com/watch?v=kNGYuTelE3E */
+}
+.div {
+  min-height: 100%; /* https://www.youtube.com/watch?v=kNGYuTelE3E */
+  display: flex; /* https://www.youtube.com/watch?v=kNGYuTelE3E */
+  flex-direction: column; /* https://www.youtube.com/watch?v=kNGYuTelE3E */
+}
+.main {
+  flex: 1 1 auto; /* https://www.youtube.com/watch?v=kNGYuTelE3E */
+}
+.inner {
+	background: white;
+	margin: auto;
+	border-radius: auto;
+	width: auto;
+	height: auto;
+	font-size: auto;
+	text-align: center;
+	color: black;
+  margin-top: 20px;
+  transition: 2s; /* Время эффекта */
+}
+.inner:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text {
+	margin-left: 20px;
+}
+.text-1 {
+	margin-left: 185px;
+}
+.button-probel {
+	margin-left: 65px;
+}
+.button-probel-1 {
+	margin-left: 79px;
+}
+.button-probel-2 {
+    margin-left: 24px;
+}
+.text-probel {
+    margin-left: 44px;
+}
+.text-font {
+    color: white;
+}
+body {
+    background: #1D1B26;
+}
+
+      h1 {
+         color: white;
+      }
+
+      p {
+         color: rgba(255, 255, 255, .8);
+      }
+
+      nav a {
+         color: rgba(255, 255, 255, .6);
+      }
+
+      .sliding-button {
+         text-decoration: none;
+         outline: none;
+         color: white;
+         display: inline-block;
+         position: relative;
+         padding: 15px 30px;
+         border: 1px solid;
+         border-image: linear-gradient(180deg, #e4a08f, #e04b48, #ff096c, #d50082);
+         border-image-slice: 1;
+         margin: 10px 20px;
+         font-family: 'Montserrat', sans-serif;
+         text-transform: uppercase;
+         overflow: hidden;
+         letter-spacing: 2px;
+         transition: .8s cubic-bezier(.165, .84, .44, 1);
+      }
+
+      .sliding-button:before {
+         content: '';
+         position: absolute;
+         left: 0;
+         top: 0;
+         height: 0;
+         width: 100%;
+         z-index: -1;
+         color: white;
+         background: linear-gradient(180deg, #e4a08f, #ca2c2b, #ff096c, #d50082);
+         transition: .8s cubic-bezier(.165, .84, .44, 1);
+      }
+
+      .sliding-button:hover {
+         background: rgba(255, 255, 255, 0);
+      }
+
+      .sliding-button:hover:before {
+         bottom: 0%;
+         top: auto;
+         height: 100%;
+      }
+.text {
+    margin-left: 20%;
+}
+.main-button {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.footer {
+  height: 120px;
+  width: 100%;
+  background: #24242A;
+  position: absolute;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.p {
+  background: #24242A;
+  bottom: 0px;
+  position: absolute;
+  margin: auto;
+  width: auto;
+  height: auto;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  transition: 2s; /* Время эффекта */
+}
+.p:hover {
+  background: #24242A;
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+.images-probel {
+  margin-left: 41%;
+}
