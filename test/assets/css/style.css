@@ -35,7 +35,7 @@ body {
 	margin-left: 20px;
 }
 .text-1 {
-	margin-left: 185px;
+	margin-left: 12%;
 }
 .button-probel {
 	margin-left: 65px;
@@ -55,59 +55,6 @@ body {
 body {
     background: #1D1B26;
 }
-
-      h1 {
-         color: white;
-      }
-
-      p {
-         color: rgba(255, 255, 255, .8);
-      }
-
-      nav a {
-         color: rgba(255, 255, 255, .6);
-      }
-
-      .sliding-button {
-         text-decoration: none;
-         outline: none;
-         color: white;
-         display: inline-block;
-         position: relative;
-         padding: 15px 30px;
-         border: 1px solid;
-         border-image: linear-gradient(180deg, #e4a08f, #e04b48, #ff096c, #d50082);
-         border-image-slice: 1;
-         margin: 10px 20px;
-         font-family: 'Montserrat', sans-serif;
-         text-transform: uppercase;
-         overflow: hidden;
-         letter-spacing: 2px;
-         transition: .8s cubic-bezier(.165, .84, .44, 1);
-      }
-
-      .sliding-button:before {
-         content: '';
-         position: absolute;
-         left: 0;
-         top: 0;
-         height: 0;
-         width: 100%;
-         z-index: -1;
-         color: white;
-         background: linear-gradient(180deg, #e4a08f, #ca2c2b, #ff096c, #d50082);
-         transition: .8s cubic-bezier(.165, .84, .44, 1);
-      }
-
-      .sliding-button:hover {
-         background: rgba(255, 255, 255, 0);
-      }
-
-      .sliding-button:hover:before {
-         bottom: 0%;
-         top: auto;
-         height: 100%;
-      }
 .text {
     margin-left: 20%;
 }
