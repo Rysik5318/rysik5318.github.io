@@ -45,6 +45,13 @@
   background-color: white;
   color: black;
   border-radius: 10px;
+  transition: .8s;
+}
+.add-to-cart:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(0px);
 }
 .price {
   font-size: 18px;
@@ -87,6 +94,32 @@ h2 {
   background-color: #24242A;
   color: white;
   text-align: center;
-  height: 128px;
+  align-items: center;
+  height: auto;
   font-size: 20px;
+}
+.button {
+  border: none;
+  width: 300px;
+  height: 350px;
+  align-items: center;
+  background-color: #24242A;
+} 
+.logo {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 10px;
+  background-color: #24242A;
+  transition: .4s;
+}
+.logo:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
 }
