@@ -1,0 +1,125 @@
+.contanier {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.product {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.image{
+  margin-bottom: 10px;
+}
+.image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
+.info h3 {
+  font-size: 21px;
+  margin-bottom: 0;
+  margin-left: 1px;
+}
+.rating {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.rating li {
+  display: inline-block;
+  color: #ffc107e3;
+}
+.info-price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.add-to-cart {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  transition: .8s;
+}
+.add-to-cart:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(0px);
+}
+.price {
+  font-size: 18px;
+  margin-left: 1px;
+}
+.floating-button { /* https://html5book.ru/krasivye-knopki-dlya-sayta/ */
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+  text-decoration: none;
+}
+.floating-button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+.buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+h2 {
+  text-align: center;
+}
+.footer {
+  background-color: #24242A;
+  color: white;
+  text-align: center;
+  align-items: center;
+  height: auto;
+  font-size: 20px;
+}
+.button {
+  border: none;
+  width: 300px;
+  height: 350px;
+  align-items: center;
+  background-color: #24242A;
+} 
+.logo {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 10px;
+  background-color: #24242A;
+  transition: .4s;
+}
+.logo:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(-7px);
+}
