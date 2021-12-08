@@ -1,0 +1,98 @@
+body {
+  background: linear-gradient(to bottom, #00ccff 28%, #0066ff 100%); /*https://html5css.ru/colors/colors_gradient.php*/
+​​​​​​​  height: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+
+}
+/*.wrapper {
+  width: 600px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+.image-slider {
+  display: flex;
+  padding: 80px 0 0px 0;
+  width: 600px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image-slider_wrapper{
+}
+.image-slider_slide {
+}
+.image-slider_image img {
+  max-width: 100%;
+  box-shadow: 0 0 30px black;
+}
+.image-slide .swiper-button-prev::after,
+.image-slide .swiper-button-next::after {
+  color: #fff;
+  font-size: 80px;
+}
+.flex {
+  display: flex;
+  font-size: 40px;
+}
+.product {
+    flex-shrink: 0;
+    background-color: #000;
+    position: relative;
+    z-index: 2;
+    margin-right: 10px;
+    width: 616px;
+    height: 353px;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0 10px 5px #000;
+}
+.info h3 {
+  font-size: 21px;
+  margin-bottom: 0;
+  margin-left: 1px;;;
+      flex-shrink: 1;
+}
+.rating {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.rating li {
+  display: inline-block;
+  color: #ffc107e3;
+}
+.info-price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.add-to-cart {
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  transition: .8s;
+}
+.add-to-cart:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+  color: white;
+  transform: translateY(0px);
+}
+.image{
+  margin-bottom: 10px;
+}
+.image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+}
