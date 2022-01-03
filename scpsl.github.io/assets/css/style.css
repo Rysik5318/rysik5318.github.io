@@ -124,9 +124,26 @@ tr {
 .menu-content>#content-4:target~.menu-body>a[href="#content-4"],
 .menu-content>#content-5:target~.menu-body>a[href="#content-5"],
 .menu-content>#content-6:target~.menu-body>a[href="#content-6"],
-.menu-content>#content-7:target~.menu-body>a[href="#content-7"] {
+.menu-content>#content-7:target~.menu-body>a[href="#content-7"],
+.menu-content>#content-8:target~.menu-body>a[href="#content-8"],
+.menu-content>#content-9:target~.menu-body>a[href="#content-9"],
+.menu-content>#content-10:target~.menu-body>a[href="#content-10"],
+.menu-content>#content-11:target~.menu-body>a[href="#content-11"],
+.menu-content>#content-12:target~.menu-body>a[href="#content-12"],
+.menu-content>#content-13:target~.menu-body>a[href="#content-13"],
+.menu-content>#content-14:target~.menu-body>a[href="#content-14"],
+.menu-content>#content-15:target~.menu-body>a[href="#content-15"],
+.menu-content>#content-16:target~.menu-body>a[href="#content-16"],
+.menu-content>#content-17:target~.menu-body>a[href="#content-17"] {
   background-color: #bbdefb;
   cursor: default;
+
+}
+.menu-content a{
+  transition: 0.1s linear 0.1s;
+}
+.menu-content a:hover {
+  transform: scale(1.1);
 }
 
 .menu-content>div:not(.menu-body) {
@@ -178,4 +195,12 @@ tr {
 .gallery-list img {
   width: 793px;
   border-radius: 10px;
+}
+.nigger {
+  size: 0.1px;
+  position: relative;
+  top: 60px;
+}
+.nigger a{
+  text-decoration: none;
 }
