@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Заголовок</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="menu">
+  	<h1>Меню</h1>
+    <div class="menu-content">
+      <div align="center" style="font-size: 20px" id="content-0">
+        <span><b>Панель Remote Admin</b> - это меню, помогающее модераторам и администраторам <a title="Серверы">серверов</a> делать их работу. Игрок должен быть уполномочен владельцем сервера, чтобы использовать функции Remote Admin .</p>
+        <h1 class="#Функции">Функции</h1>
+        <h2>Welcome</h2>
+        <span>"Welcome" - это первая страница, которую увидит игрок, когда откроет RA. Это простой способ объяснить игроку как ориентироваться и использовать меню.</p><br>
+      <img class="image-center" src="assets/images/800px-Remote_Admin_Welcome_Screen.png">
+      <h2 >Player info</h2>
+      <p>Вкладка "Player info" включает 3 кнопки (в версии 2.0.2): "Request", "Request IP" и "Request Auth".</p>
+      <h3 ><b>Использование</b></h3>
+      <ul >
+        <li><b>1. </b>Выбрать игрока из левого столбца под названием "Players".</li><br>
+        <li><b>2. </b>Нажмите на одну из 3-х кнопок перечисленных ниже.</li>
+      </ul>
+      <p><b>Request</b></p>
+      <p>Кнопки позволяют пользователю посмотреть следующую информацию:</p>
+        <span><b>1. </b>Никнейм</span><br>
+        <span><b>2. </b>Player ID</span><br>
+        <span><b>3. </b>SteamID64</span><br>
+        <span><b>4. </b>Роль на сервере</span><br>
+        <span><b>5. </b>Любые спрятанные роли (если уполномочен)</span><br>
+        <span><b>6. </b>Active flags</span><br>
+        <span><b>7. </b>Класс (если уполномочен)</span><br>
+        <span><b>8. </b>HP</span>
+      <p><b>Request IP</b></p>
+      <p>То же самое, что и "request", но включающее IP адрес, использующийся игроком, чтобы подключится к серверу. Он может использоваться, чтобы найти человека, использующего другие аккаунты, чтобы обходить блокировки.</p>
+      <p><b>Request Auth</b></p>
+      <p>Отображает аутентификационный токен игроков вместе с QR кодом.</p><br>
+      <img class="image-center" src="assets/images/800px-Remote_Admin_Player_Info.png">
+      <h2 >Kick/Ban</h2>
+      <span>Инструменты администратора позволяют модераторам и администраторам серверов легче выполнять свои задачи без использования команд.</p>
+      <h3 >Использование</h3>
+        <span><b>1. </b>Выбрать игрока из левого столбца под названием "Players".</span><br>
+        <span><b>2. </b>Выберите желанное значение времени для того, чтобы убрать их из игры.</span><br>
+        <span><b>3. </b>Щёлкните "Request".</span><br>
+      <img src="assets/images/800px-Remote_Admin_Kick_and_Ban.png">
+      <h2>Forceclass</h2>
+      <p>Позволяет пользователю изменить текущий класс любого игрока. Выберите одного или нескольких игроков, щёлкните на желанный класс, затем нажмите кнопку <i>SET CLASS</i>. "Force Class" - это единственный способ сменить чей-то класс на <b>Обучение</b> без использования плагинов.</p><br>
+      <img src="assets/images/800px-Remote_Admin_Force_Class.png">
+      <h2>Give Item</h2>
+      <p>Позволяет пользователю выдавать предметы любому другому игроку. Выберите одного или нескольких игроков, щёлкните на желанный предмет, затем нажмите кнопку <i>REQUEST</i>. Give Item - это единственный способ получить Монету без использования плагинов. Патроны, выданные игроку этой командой, будут добавлены в его инвентарь и не причисляются к его текущему количеству патронов, таким образом игрокам нужно будет открыть свой инвентарь и выбросить патроны, а затем подобрать патроны обратно, чтобы увеличить их количество патронов.</p><br>
+      <img src="assets/images/800px-Remote_Admin_Give_Item.png">
+      <h2>Admin Tools</h2>
+      <p><b>Overwatch</b></p>
+      <span>Когда игрок находится в режиме "overwatch", он не может появиться за какой-либо класс с помощью команд или своевременного появления. Это полезно для наблюдения за кем-то по подозрению на нарушение правил.</span>
+      <p><b>God Mode</b></p>
+      <span>Когда у игрока включён "god mode", он не может умереть.</span><br>
+      <p><b>Bypass Mode</b></p>
+      <span>Игрок, который использует "обход", может открыть или использовать любые вещи без требования ключ-карты. Это также позволяет бесконечно использовать интерком.</span><br>
+      <p><b>Teleportation</b></p>
+      <span>Позволяет модераторам и администраторам телепортировать других игроков туда, куда им нужно. Здесь есть два варианта телепортации, перечисленных ниже.</span><br><br>
+        <span><b>1. </b>Bring - перемещает выбранного пользователя к тому, кто использует команду.</span><br>
+        <span><b>2. </b>Go to - перемещает того, кто использует команду, к выбранному игроку.</span>
+      <p><b>Misc</b></p>
+      <span>Категория "Misc" включает 2 команды, которые не вписываются ни в одну из других категорий. Эти команды перечислены ниже.</span><br><br>
+        <span><b>1. </b>Heal - исцеляет выбранного игрока до полного выздоровления.</span><br>
+        <span><b>2. </b>Lockdown - блокирует все двери на карте.</span>
+      <p><b>Noclip</b></p>
+      Позволяет игроку переключаться между noclip'ом с помощью клавиши <b><kbd style="border: 1px solid #aaa; border-radius: 0.2em; background-color: white; padding: 0.1em 0.3em; font-family: inherit; font-size: 0.85em;">ALT</span></b>. Скорость полёта может быть изменена с помощью Колёсика Мыши.
+      <h3>Использование</h3>
+      <span><b>1. </b>Выбрать игрока из левого столбца под названием "Players".</span><br>
+      <span><b>2. </b>Выберите один из перечисленных инструментов администратора.</span><br><br>
+      <img src="assets/images/800px-Remote_Admin_Admin_Tools.png">
+      <h2>Door Management</h2>
+      <p>Позволяет пользователю взаимодействовать со множеством дверей по всему комплексу. Обычные двери коридоров могут быть выбраны кнопкой <i>"All"</i>. <i>"All (listed)"</i> выделит все остальные кнопки, отображённые в меню. Двери, которые ведут в особые комнаты, такие как 012, арсенал КС 049 и так далее, перечислены как кнопки, которые также могут быть выбраны. На кнопках перечисляются возможные взаимодействия.<br>
+      Любая открытая дверь будет окрашиваться зелёным цветом в RA. <br>
+      Любая заблокированная дверь будет обводиться красным цветом. <br>
+      Любая уничтоженная дверь будет окрашиваться красным цветом. <br>
+      После Обеззараживания все кнопки дверей, находящиеся в Лёгкой Зоне Содержания, будут подсвечены красным, с ними всё ещё можно взаимодействовать.<br>
+      После взрыва Альфа-Боеголовки все двери, кроме тех, что находятся на Поверхности, будут подсвечены красным.<br></p>
+      <ul><li><span class="kbd">Open</span>
+      <ul><li>Откроет все выбранные двери.</li></ul></li><br>
+      <li><span class="kbd">Close</span></i>
+      <ul><li>Закроет все выбранные двери.</li></ul></li><br>
+      <li><span class="kbd">Lock</span></i>
+      <ul><li>Заблокирует все выбранные двери.</li></ul></li><br>
+      <li><span class="kbd">Unlock</span></i>
+      <ul><li>Разблокирует все выбранные двери.</li></ul></li><br>
+      <li><span class="kbd">Destroy</span></i>
+      <ul><li>Уничтожит все выбранные двери, за исключением ворот.</li></ul></li><br>
+      <li><span class="kbd">Teleport</span></i>
+      <ul><li>Телепортирует к выбранной двери.</li></ul></li></ul><br>
+      <img src="assets/images/800px-Remote_Admin_Door_Management2.png">
+      <h2>Status Effects</h2>
+      <p>Позволяет пользователю выдать игрокам любой эффект, а также убрать его. Положительные эффекты окрашены зелёным цветом, отрицательные - красным, смешанные эффекты окрашены розовым.</p><br>
+      <img src="assets/images/Remote_Admin_Status_Effects.png">
+      <h2>Player Mgmt</h2>
+      <p>Позволяет пользователю управлять способностью игрока пользоваться голосовым чатом.</p>
+      <ul><li><span class="kbd">Mute</span>
+      <ul><li>Заглушит микрофон игрока.</li></ul></li><br>
+      <li><span class="kbd">Unmute</span>
+      <ul><li>Уберёт заглушку с микрофона игрока.</li></ul></li><br>
+      <li><span class="kbd">Icom - Mute</span>
+      <ul><li>Заблокирует игроку возможность пользоваться Интеркомом.</li></ul></li><br>
+      <li><span class="kbd">Icom - Unmute</span>
+      <ul><li>Разблокирует игроку возможность пользоваться Интеркомом.</li></ul></li></ul><br>
+      <img src="assets/images/800px-Remote_Admin_Player_Mgmt.png">
+      <h2>Server Events</h2>
+      <ul><li><span class="kbd">Respawn MTF</span>
+      <ul><li>Призывает Мобильную Опергруппу.</li></ul></li><br>
+      <li><span class="kbd">Respawn CI</span>
+      <ul><li>Призывает Повстанцев Хаоса.</li></ul></li><br>
+      <li><span class="kbd">Restart Round</span>
+      <ul><li>Перезапускает текущий раунд.</li></ul></li><br>
+      <li><span class="kbd">Start Round</span>
+      <ul><li>Начинает раунд.</li></ul></li><br>
+      <li><span class="kbd">Kick Unconn.</span>
+      <ul><li>Отключает игроков, которые не до конца подключились к серверу.</li></ul></li><br>
+      <li><span class="kbd">Warhead Start</span>
+      <ul><li>Активирует процесс детонации Альфа-Боеголовки.</li></ul></li><br>
+      <li><span class="kbd">Warhead Stop</span>
+      <ul><li>Отменяет процесс детонации Альфа-Боеголовки.</li></ul></li><br>
+      <li><span class="kbd">Detonate</span>
+      <ul><li>Моментально детонирует Альфа-Боеголовку.</li></ul></li><br>
+      <li><span class="kbd">Icom Timeout</span>
+      <ul><li>Отключает Интерком, если игрок в данный момент его использует.</li></ul></li><br>
+      <li><span class="kbd">Icom Reset</span>
+      <ul><li>Сбрасывает время восстановления интеркома, позволяя использовать его сразу.</li></ul></li><br>
+      <li><span class="kbd">Round Lock</span>
+      <ul><li>Делает текущий раунд бесконечным.</li></ul></li><br>
+      <li><span class="kbd">Lobby Lock</span>
+      <ul><li>Останавливает начало раунда в лобби <i>Пожалуйста, подождите</i>.</li></ul></li></ul><br>
+      <img src="assets/images/800px-Remote_Admin_Server_Events.png">
+      <h2>Server Configs</h2>
+      <p>Позволяет пользователю переключать настройки "Friendly Fire" (Огонь по своим) и "Spawn Protection" (Защита при появлении).<br>
+      Позволяет пользователю редактировать некоторые параметры конфигурации.</p>
+      <img src="assets/images/800px-Remote_Admin_Server_Configs.png">
+      <h2>Spawn Tickets</h2>
+      <p>Позволяет пользователю увидеть текущее кол-во Жетонов Возрождения Мобильной Опергруппы и Повстанцев Хаоса. Кнопка "Refresh", находящаяся в правом верхнем углу, нужна для того, чтобы обновить кол-во Жетонов. <br>В меню будет отображаться 0 Жетонов для обеих команд, пока не будет нажата кнопка "Refresh". <br> Кнопки "+" и "-" могут использоваться для уменьшения и увеличения количества Жетонов.</p>
+      <img src="assets/images/800px-Remote_Admin_Spawn_Tickets.png">
+      <h2>Текстовая Админ-Панель</h2>
+      <p><b>Текстовую Админ-Панель</b> можно открыть нажатием на нижнюю часть Панели Remote Admin.<br> Команды в Текстовой Панели Администратора требует наличие определённых Прав у роли пользователя для того, чтобы выполнять их. Некоторые права могут дать только ограниченный доступ к командам.</p>
+      <table class="wikitable">
+<tbody><tr>
+<th>Название
+</th>
+<th>Псевдоним
+</th>
+<th>Описание
+</th>
+<th>Параметры
+</th>
+<th>Требуемое разрешение
+</th></tr>
+<tr>
+<td><b>Admin Chat</b>
+</td>
+<td>N/A
+</td>
+<td>Показывает сообщение в верхней части экрана, только для администраторов.
+</td>
+<td>@&lt;текст&gt;
+</td>
+<td>ATC
+</td></tr>
+<tr>
+<td><b>Broadcast</b>
+</td>
+<td><i>BC</i>
+</td>
+<td>Показывает сообщение в верхней части экрана для всех.
+</td>
+<td>broadcast &lt;продолжительность&gt; &lt;текст&gt;
+</td>
+<td>BRC
+</td></tr>
+<tr>
+<td><b>ban</b>
+</td>
+<td>N/A
+</td>
+<td>Блокирует пользователя на сервере.
+</td>
+<td>Ban &lt;playerID&gt; &lt;продолжительность&gt;
+</td>
+<td>BN1, BN2, BN3
+</td></tr>
+<tr>
+<td><b>buildinfo</b>
+</td>
+<td>N/A
+</td>
+<td>Выводит информацию о текущей сборке.
+</td>
+<td>Buildinfo
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>cassie</b>
+</td>
+<td>N/A
+</td>
+<td>Позволяет игроку использовать C.A.S.S.I.E. для создания оповещений.
+</td>
+<td>cassie &lt;Pitch_X.x&gt; &lt;jam_(задержка)_(кол-во заиканий)&gt; &lt;слова&gt;
+</td>
+<td>ANN
+</td></tr>
+<tr>
+<td><b>cassiewords</b>
+</td>
+<td>N/A
+</td>
+<td>Выводит все слова C.A.S.S.I.E., которые она может сказать.
+</td>
+<td>cassiewords
+</td>
+<td>ANN
+</td></tr>
+<tr>
+<td><b>contact</b>
+</td>
+<td>N/A
+</td>
+<td>Перечисляет контактную информацию сервера.
+</td>
+<td>contact
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>config</b>
+</td>
+<td><i>cfg</i>
+</td>
+<td>Позволяет отладить и перезагрузить конфигурацию сервера.
+</td>
+<td>config path<br>config reload<br> config value &lt;вариант_конфигурации&gt;
+</td>
+<td>CFG
+</td></tr>
+<tr>
+<td><b>disarm</b>
+</td>
+<td><i>da</i>
+</td>
+<td>Разоружает игрока, можно освободить только с помощью команды <b>release</b>.
+</td>
+<td>disarm &lt;playerID&gt;
+</td>
+<td>PLM
+</td></tr>
+<tr>
+<td><b>ffd</b>
+</td>
+<td><i>tk/tkd</i>
+</td>
+<td>Показывает урон/убийства, совершённые игроком по дружественным классам. Отключает/Включает "Friendly Fire" (Огонь по своим).
+</td>
+<td>ffd &lt;playerID&gt; <br> ffd status <br> ffd pause <br> ffd unpause
+</td>
+<td>FFT
+</td></tr>
+<tr>
+<td><b>groups</b>
+</td>
+<td>N/A
+</td>
+<td>Перечисляет все роли на сервере и их права.
+</td>
+<td>groups
+</td>
+<td>*
+</td></tr>
+<tr>
+<td><b>help</b>
+</td>
+<td>N/A
+</td>
+<td>Показывает список команд и открывает вики-страницу Панели Администратора.<br> Показывает справку для команды.
+</td>
+<td>help <br> &lt;название_команды&gt;
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>HP</b>
+</td>
+<td>N/A
+</td>
+<td>Задаёт определённое значение HP для игрока.
+</td>
+<td>hp &lt;playerID&gt; &lt;значение&gt;
+</td>
+<td>PLM
+</td></tr>
+<tr>
+<td><b>icom</b>
+</td>
+<td><i>speak</i>
+</td>
+<td>Включает оповещение через интерком
+</td>
+<td>icom
+</td>
+<td>BRC
+</td></tr>
+<tr>
+<td><b>intercomtext</b>
+</td>
+<td><i>icomtxt</i>
+</td>
+<td>Изменяет текст на экране интеркома.
+</td>
+<td>intercomtext &lt;текст&gt;
+</td>
+<td>BRC
+</td></tr>
+<tr>
+<td><b>oban</b>
+</td>
+<td>N/A
+</td>
+<td>Блокирует отключённого игрока. Продолжительность также можно указать в единицах измерения.
+</td>
+<td>oban &lt;userIP&gt; &lt;продолжительность&gt; &lt;причина&gt; <br> oban &lt;steamID/discordID&gt; &lt;продолжительность&gt; &lt;причина&gt;
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>overcharge</b>
+</td>
+<td><i>ocharge</i>
+</td>
+<td>Выключает освещение в ТЗС, также можно выключить и в ЛЗС.
+</td>
+<td>overcharge &lt;продолжительность&gt; &lt;толькоТЗС&gt; = (true/false)
+</td>
+<td>FCM
+</td></tr>
+<tr>
+<td><b>perm</b>
+</td>
+<td>N/A
+</td>
+<td>Перечисляет все Ваши права.
+</td>
+<td>perm
+</td>
+<td>*
+</td></tr>
+<tr>
+<td><b>Ping</b>
+</td>
+<td>N/A
+</td>
+<td>Показывает Вашу текущую задержку.
+</td>
+<td>ping <br> ping &lt;playerID&gt;
+</td>
+<td>*
+</td></tr>
+<tr>
+<td><b>playerinventory</b>
+</td>
+<td><i>playerinv/pinv/pinventory</i>
+</td>
+<td>Показывает инвентарь игроков.
+</td>
+<td>playerinventory &lt;playerID&gt;
+</td>
+<td>PLM
+</td></tr>
+<tr>
+<td><b>PM</b>
+</td>
+<td>N/A
+</td>
+<td>Используется для редактирования разрешений групп.
+</td>
+<td>pm groups <br><i>Для всех команд, перечисленных ниже, добавляйте "pm group" в начало.</i> <br> info &lt;название_группы&gt; <br> grant/revoke &lt;название_группы&gt; &lt;название_разрешения&gt; <br> setcolor &lt;название_цвета&gt; <br> settag &lt;groupname&gt; &lt;название_ярлыка&gt; <br> enablecover/disablecover &lt;название_группы&gt;
+</td>
+<td>PRM
+</td></tr>
+<tr>
+<td><b>refreshcommands</b>
+</td>
+<td>N/A
+</td>
+<td>Перезагружает все команды.
+</td>
+<td>refreshcommands
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>release</b>
+</td>
+<td><i>free</i>
+</td>
+<td>Освобождает разоружённого игрока.
+</td>
+<td>release &lt;playerID&gt;
+</td>
+<td>PLM
+</td></tr>
+<tr>
+<td><b>ridlist</b>
+</td>
+<td><i>rids</i>
+</td>
+<td>Выводит ID всех комнат.
+</td>
+<td>ridlist
+</td>
+<td>
+</td></tr>
+<tr>
+<td><b>roomtp</b>
+</td>
+<td><i>rtp/ridtps</i>
+</td>
+<td>Телепортирует к соответствующему ID комнаты.
+</td>
+<td>roomtp &lt;roomID&gt;
+</td>
+<td>PLM
+</td></tr>
+<tr>
+<td><b>roundtime</b>
+</td>
+<td><i>rt</i>
+</td>
+<td>Показывает текущую продолжительность раунда.
+</td>
+<td>roundtime
+</td>
+<td>SCC
+</td></tr>
+<tr>
+<td><b>setgroup</b>
+</td>
+<td>N/A
+</td>
+<td>Временно задаёт группу кому-нибудь.
+</td>
+<td>setgroup &lt;playerID&gt; &lt;название_группы&gt;
+</td>
+<td>SGR
+</td></tr>
+<tr>
+<td><b>stopnextround</b>
+</td>
+<td>N/A
+</td>
+<td>Останавливает сервер в конце следующего раунда.
+</td>
+<td>stopnextround
+</td>
+<td>PRM
+</td></tr>
+<tr>
+<td><b>Unban</b>
+</td>
+<td>N/A
+</td>
+<td>Разблокирует игрока на сервере.
+</td>
+<td>Unban id &lt;playerID&gt; <br> Unban ip &lt;userIP&gt;
+</td>
+<td>BN3
+</td></tr></tbody></table>
+  <h3>Коды Прав</h3>
+  <p>Сортировочная таблица кодов прав. Щелкните на заголовки, для их сортировки.</p>
+  <table class="wikitable sortable jquery-tablesorter">
+<thead><tr>
+<th tabindex="0" role="columnheader button" title="Упорядочить по возрастанию"><b>Код</b>
+</th>
+<th tabindex="0" role="columnheader button" title="Упорядочить по возрастанию"><b>Название в файле конфигурации</b>
+</th>
+<th tabindex="0" role="columnheader button" title="Упорядочить по возрастанию"><b>Предоставляет доступ к панели администратора</b>
+</th></tr></thead><tbody>
+<tr>
+<td>(*)
+</td>
+<td>Любое право
+</td>
+<td>Н/Д
+</td></tr>
+<tr>
+<td>BN1
+</td>
+<td>KickingAndShortTermBanning
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>BN2
+</td>
+<td>BanningUpToDay
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>BN3
+</td>
+<td>LongTermBanning
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>FSE
+</td>
+<td>ForceclassSelf
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>FSP
+</td>
+<td>ForceclassToSpectator
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>FWR
+</td>
+<td>ForceclassWithoutRestrictions
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>GIV
+</td>
+<td>GivingItems
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>EWA
+</td>
+<td>WarheadEvents
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>ERE
+</td>
+<td>RespawnEvents
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>ERO
+</td>
+<td>RoundEvents
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>SGR
+</td>
+<td>SetGroup
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>GMD
+</td>
+<td>GameplayData
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>OVR
+</td>
+<td>Overwatch
+</td>
+<td>НЕТ
+</td></tr>
+<tr>
+<td>FCM
+</td>
+<td>FacilityManagement
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>PLM
+</td>
+<td>PlayersManagement
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>PRM
+</td>
+<td>PermissionsManagement
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>SCC
+</td>
+<td>ServerConsoleCommands
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>VHB
+</td>
+<td>ViewHiddenBadges
+</td>
+<td>НЕТ
+</td></tr>
+<tr>
+<td>CFG
+</td>
+<td>ServerConfigs
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>BRC
+</td>
+<td>Broadcasting
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>CDA
+</td>
+<td>PlayerSensitiveDataAccess
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>NCP
+</td>
+<td>Noclip
+</td>
+<td>НЕТ
+</td></tr>
+<tr>
+<td>AFK
+</td>
+<td>AFKImmunity
+</td>
+<td>НЕТ
+</td></tr>
+<tr>
+<td>ATC
+</td>
+<td>AdminChat
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>GHB
+</td>
+<td>ViewHiddenGlobalBadges
+</td>
+<td>НЕТ
+</td></tr>
+<tr>
+<td>ANN
+</td>
+<td>Announcer
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>EFF
+</td>
+<td>Effects
+</td>
+<td>ДА
+</td></tr>
+<tr>
+<td>FFI
+</td>
+<td>FriendlyFireDetectorImmunity
+</td>
+<td>НЕТ
+</td></tr>
+<tr>
+<td>FFT
+</td>
+<td>FriendlyFireDetectorTempDisable
+</td>
+<td>ДА
+</td></tr></tbody><tfoot></tfoot></table>
+  <h3>ID Комнат</h3>
+  <p>Сортировочная таблица для ID комнат. Обратите внимание, что несколько комнат могут иметь одинаковый ID. Щелкните на заголовки для их сортировки.<br> Не у каждой комнаты есть свой ID. Если нужной вам комнаты нет в списке, то вполне вероятно, что у неё нет ID.</p>
+  <table class="wikitable sortable jquery-tablesorter">
+<thead><tr>
+<th tabindex="0" role="columnheader button" title="Упорядочить по возрастанию"><b>ID</b>
+</th>
+<th tabindex="0" role="columnheader button" title="Упорядочить по возрастанию"><b>Описание</b>
+</th>
+<th tabindex="0" role="columnheader button" title="Упорядочить по возрастанию"><b>Зона</b>
+</th>
+<th tabindex="0" role="columnheader button" title="Упорядочить по возрастанию"><b>Номер комнат</b>
+</th></tr></thead><tbody>
+<tr>
+<td>CROSSING
+</td>
+<td>Перекрёсток в ЛЗС
+</td>
+<td>ЛЗС
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>GATE_A
+</td>
+<td>Область Поверхности у лифта, ведущего к Воротам А
+</td>
+<td>Зона Поверхности
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>HC_079_CR
+</td>
+<td>Камера Содержания SCP 079
+</td>
+<td>ТЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>HC_079_HALL
+</td>
+<td>Пространство между двумя бронированными дверьми, ведущее к КС SCP 079
+</td>
+<td>ТЗС
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>HC_079_MON
+</td>
+<td>Комната наблюдения за SCP 079
+</td>
+<td>ТЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>HC_096_CR
+</td>
+<td>Предположительно КС 096, но на самом деле это комната хранения MicroHID
+</td>
+<td>ТЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>HC_106_CR
+</td>
+<td>Комната SCP 106, причем как комнаты за закрытыми дверями, так и комнаты со свободным доступом имеют одинаковые ID.
+</td>
+<td>ТЗС
+</td>
+<td>3
+</td></tr>
+<tr>
+<td>HC_457_CR
+</td>
+<td>Комната появления SCP 096
+</td>
+<td>ТЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>HC_SERVERS
+</td>
+<td>Серверная комната
+</td>
+<td>ТЗС
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>HC_TESLA_B
+</td>
+<td>Все Ворота Теслы в ТЗС
+</td>
+<td>ТЗС
+</td>
+<td>4
+</td></tr>
+<tr>
+<td>HID
+</td>
+<td>Прямо снаружи комнаты хранения MicroHID
+</td>
+<td>ТЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Intercom
+</td>
+<td>Прямо снаружи помещения с Интеркомом
+</td>
+<td>Входная Зона
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>LC_914_CR
+</td>
+<td>Внутри Камеры Содержания SCP 914
+</td>
+<td>ЛЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>LC_ARMORY
+</td>
+<td>Предположительно оружейная в ЛЗС, но на самом деле это красные комнаты во Входной Зоне
+</td>
+<td>Входная Зона
+</td>
+<td>2
+</td></tr>
+<tr>
+<td>LC_CAFE
+</td>
+<td>Офисная комната в ЛЗС
+</td>
+<td>ЛЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>nuke_hcz
+</td>
+<td>Прямо снаружи лифта, ведущего в Комнату с Боеголовкой
+</td>
+<td>ТЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>nukesite
+</td>
+<td>Прямо перед Панелью Управления включением ядерной боеголовки
+</td>
+<td>ТЗС
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Offices_PCs
+</td>
+<td>Огромная офисная комната во Входной Зоне
+</td>
+<td>Входная Зона
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Offices_PCs_small
+</td>
+<td>Небольшая офисная комната во Входной Зоне
+</td>
+<td>Входная Зона
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Offices_upstair
+</td>
+<td>Офисная комната с лестницей во Входной Зоне
+</td>
+<td>Входная Зона
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Shelter
+</td>
+<td>Прямо снаружи бронированной двери, ведущей в Эвакуационное Убежище
+</td>
+<td>Входная Зона
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Smallrooms2
+</td>
+<td>Прямой коридор с двумя заблокированными дверьми во Входной Зоне
+</td>
+<td>Входная Зона
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>Straight_4
+</td>
+<td>Прямой коридор во Входной Зоне
+</td>
+<td>Входная Зона
+</td>
+<td>1
+</td></tr>
+<tr>
+<td>topsite
+</td>
+<td>Прямо снаружи Комнаты Управления Боеголовкой на Поверхности
+</td>
+<td>Зона Поверхности
+</td>
+<td>1
+</td></tr></tbody><tfoot></tfoot></table>
+  <h3>Список слов CASSIE</h3>
+  <p>Полный список фраз и слов CASSIE можно найти <a rel="nofollow" class="external text" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2220087668">здесь</a>.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div id="content-1">
+        <h1>Команда - Help</h1>
+        <h4>Возвращает все команды с их описаниями и псевдонимами или отборажает справку для sp...</h4>
+        <h2>Галерея -</h2>
+        	<div class="gallery">
+          <section class="gallery">
+    <div class="gallery-list">
+      <a href="assets/images/Gallery-Help-1.png" class="gallery-item">
+        <img src="assets/images/Gallery-Help-1.png" alt="alt">
+      </a>
+    </div>
+  </section>
+        	</div>
+      </div>
+      <div id="content-2">
+        <h1>Команда - htag/stag</h1>
+        <h4>Скрыть/Показать ваш собственный префикс</h4>
+        <h2>Галерея -</h2>
+        <iframe style="border-radius: 10px;" width="793" height="445" src="https://www.youtube.com/embed/39FSWBjKU0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="alt"></iframe>
+      </div>
+      <div id="content-3">
+        <h1>Команда - bc/alert [Время (в сек)]</h1>
+        <h4>Отправляет всем текст наверху экрана.</h4>
+        <h2>Галерея -</h2>
+          <div class="gallery-1">
+          <section class="gallery">
+    <div class="gallery-list">
+      <a href="assets/images/SCspan Secret Laboratory Screenshot 2022.01.02 - 20.25.55.20.png" class="gallery-item">
+        <img src="assets/images/SCspan Secret Laboratory Screenshot 2022.01.02 - 20.25.55.20.png" alt="alt">
+      </a>
+     <a href="assets/images/SCspan Secret Laboratory Screenshot 2022.01.02 - 20.26.07.18.png" class="gallery-item">
+        <img src="assets/images/SCspan Secret Laboratory Screenshot 2022.01.02 - 20.26.07.18.png" alt="alt">
+      </a>
+    </div>
+  </section>
+          </div>
+      </div>
+      <div id="content-4">
+        <h1>Команда - @ [Текст]</h1>
+        <h4>Отправляет текст в админ чат наверху экрана</h4>
+        <h2>Галерея -</h2>
+          <div class="gallery-1">
+          <section class="gallery">
+    <div class="gallery-list">
+      <a href="assets/images/SCspan Secret Laboratory Screenshot 2022.01.02 - 21.01.02.16.png" class="gallery-item">
+        <img src="assets/images/SCspan Secret Laboratory Screenshot 2022.01.02 - 21.01.02.16.png" alt="alt">
+      </a>
+        <iframe style="border-radius: 10px;" width="793" height="445" src="https://www.youtube.com/embed/GaIizGi-A4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+          </div>
+      </div>
+      <div id="content-5">
+        <h1>Команда - ban [Айди/Имя игрока] [Время(h,d,y)] Текст</h1>
+        <h4>Банит игрока на время на сервере</h4>
+      </div>
+      <div id="content-6">
+        <h1>Команда - speak/icom</h1>
+        <h4>С помощью этой команды можно говорить в интеркоме на расстоянии. Чтобы вкл/выкл надо прописать команду заново.</h4>
+        <iframe style="border-radius: 10px;" width="793" height="445" src="https://www.youtube.com/embed/aYCXLoiKKgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="content-7">
+      </div>
+      <div class="menu-body">
+        <a href="#content-0"><h3>Панель <br> Администратора</h3></a>
+        <a href="#content-1"><h3>Help</h3></a>
+        <a href="#content-2"><h3>htag/stag</h3></a>
+        <a href="#content-3"><h3>bc/alert</h3></a>
+        <a href="#content-4"><h3>@</h3></a>
+        <a href="#content-5"><h3>ban</h3></a>
+        <a href="#content-6"><h3>speak/icom</h3></a>
+        <a href="#content-7"><h3>bc/alert</h3></a>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="assets/js/js.js"></script>
+</body>
+</html>
