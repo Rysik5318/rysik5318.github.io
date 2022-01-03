@@ -124,7 +124,7 @@ tr {
 .menu-content>#content-4:target~.menu-body>a[href="#content-4"],
 .menu-content>#content-5:target~.menu-body>a[href="#content-5"],
 .menu-content>#content-6:target~.menu-body>a[href="#content-6"],
-.menu-content>#content-3:target~.menu-body>a[href="#content-7"] {
+.menu-content>#content-7:target~.menu-body>a[href="#content-7"] {
   background-color: #bbdefb;
   cursor: default;
 }
