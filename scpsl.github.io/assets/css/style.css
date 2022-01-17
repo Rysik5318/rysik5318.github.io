@@ -81,8 +81,6 @@ tr {
   max-width: 2900px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 5px solid black;
-  border-radius: 16px;
 }
 
 .menu-content {
@@ -137,7 +135,6 @@ tr {
 .menu-content>#content-17:target~.menu-body>a[href="#content-17"] {
   background-color: #bbdefb;
   cursor: default;
-
 }
 .menu-content a{
   transition: 0.1s linear 0.1s;
@@ -151,7 +148,39 @@ tr {
   order: 1;
   flex-grow: 1;
 }
-
+.administration {
+  display: flex;
+  order: 0;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #e3f2fd;
+  box-shadow: 0 2px 4px 0 #e3f2fd;
+  flex-direction: column;
+}
+.administration>a {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 8px;
+  color: #1976d2;
+  padding: 6px 10px;
+  text-align: center;
+  color: black;
+}
+.administration>a:hover {
+  background-color: rgba(227, 242, 253, 0.3);
+}
+.menu-content>.administration>#content-0:target~.administration>a[href="#content-0"],
+.menu-content>.administration>#content-1:target~.administration>a[href="#content-1"],
+.menu-content>#content-2:target~.administration>a[href="#content-2"],
+.menu-content>#content-3:target~.administration>a[href="#content-3"],
+.menu-content>#content-4:target~.administration>a[href="#content-4"],
+.menu-content>#content-5:target~.administration>a[href="#content-5"],
+.menu-content>#content-6:target~.administration>a[href="#content-6"],
+.menu-content>#content-7:target~.administration>a[href="#content-7"] {
+  background: #bbdefb;
+  cursor: default;
+}
 @media (min-width: 576px) {
   .menu-content {
 	flex-direction: row;
@@ -203,4 +232,59 @@ tr {
 }
 .amongus a{
   text-decoration: none;
+}
+.dynamiclink_box {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    width: auto;
+    max-width: 712px;
+    background: rgba(87, 92, 104, 0.3);
+    border-radius: 6px;
+    padding: 8px;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+img.dynamiclink_preview {
+    float: left;
+    margin-right: 14px;
+    max-height: 88px;
+    max-width: 75%;
+}
+.dynamiclink_content {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    color: rgb( 192, 192, 192 );
+    text-shadow: 0 0 16px rgb(0 0 0);
+    font-size: 13px;
+    line-height: normal;
+    text-align: left;
+    display: flow-root;
+}
+.dynamiclink_name {
+    font-size: 19px;
+    color: #aad8ec;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    border-bottom: 1px dotted rgba( 109, 207, 246, .6 );
+    padding-bottom: 0px;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.dynamiclink_type {
+    color: #c6d4df;
+    font-size: 19px;
+}
+.dynamiclink_author {
+    font-size: 20px;
+    min-height: 16px;
+    color: #95a6b2;
+    margin-bottom: 4px;
+}
+.commentthread_entry_submitlink {
+    text-align: right;
+    padding-top: 5px;
+}
+.dynamiclink_description {
+  font-size: 17px;
 }

@@ -141,6 +141,19 @@
       <h2>Spawn Tickets</h2>
       <p>Позволяет пользователю увидеть текущее кол-во Жетонов Возрождения Мобильной Опергруппы и Повстанцев Хаоса. Кнопка "Refresh", находящаяся в правом верхнем углу, нужна для того, чтобы обновить кол-во Жетонов. <br>В меню будет отображаться 0 Жетонов для обеих команд, пока не будет нажата кнопка "Refresh". <br> Кнопки "+" и "-" могут использоваться для уменьшения и увеличения количества Жетонов.</p>
       <img src="assets/images/800px-Remote_Admin_Spawn_Tickets.png">
+      <h2>Broadcasting</h2>
+      <p>Позволяет отправлять текст на вверху экрана игроку/всем или же убрать объявление. Так же можно выбрать цвет, цветов 6.</p>
+      <ul>
+      <li><span class="kbd">Send To Player</span>
+      <ul><li>Отправляет текст игроку в вверху экрана.</li></ul></li><br>
+      <li><span class="kbd">Send To ALL</span>
+      <ul><li>Отправляет текст всем игрокам в вверху экрана.</li></ul></li><br>
+      <li><span class="kbd">Clear Input</span>
+      <ul><li>Обнуляет форму</li></ul></li><br>
+      <li><span class="kbd">Clear Broadcasts</span>
+      <ul><li>Отменяет и удаляет все объявления</li></ul></li></ul><br>
+      </ul>
+      <img src="assets/images/800px-Remote_Admin-Broadcasting.png">
       <h2>Текстовая Админ-Панель</h2>
       <p><b>Текстовую Админ-Панель</b> можно открыть нажатием на нижнюю часть Панели Remote Admin.<br> Команды в Текстовой Панели Администратора требует наличие определённых Прав у роли пользователя для того, чтобы выполнять их. Некоторые права могут дать только ограниченный доступ к командам.</p>
       <table class="wikitable">
@@ -928,7 +941,7 @@
       </div>
       <div id="content-1">
         <h1>Команда - Help</h1>
-        <h4>Возвращает все команды с их описаниями и псевдонимами или отборажает справку для sp...</h4>
+        <h3>Возвращает все команды с их описаниями и псевдонимами или отборажает справку для sp...</h3>
         <h2>Галерея -</h2>
         	<div class="gallery">
           <section class="gallery">
@@ -942,13 +955,13 @@
       </div>
       <div id="content-2">
         <h1>Команда - htag/stag</h1>
-        <h4>Скрыть/Показать ваш собственный префикс</h4>
+        <h3>Скрыть/Показать ваш собственный префикс</h3>
         <h2>Галерея -</h2>
         <iframe style="border-radius: 10px;" width="793" height="445" src="https://www.youtube.com/embed/39FSWBjKU0o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="alt"></iframe>
       </div>
       <div id="content-3">
         <h1>Команда - bc/alert [Время (в сек)]</h1>
-        <h4>Отправляет всем текст наверху экрана.</h4>
+        <h3>Отправляет всем текст наверху экрана.</h3>
         <h2>Галерея -</h2>
           <div class="gallery-1">
           <section class="gallery">
@@ -965,7 +978,7 @@
       </div>
       <div id="content-4">
         <h1>Команда - @ [Текст]</h1>
-        <h4>Отправляет текст в админ чат наверху экрана</h4>
+        <h3>Отправляет текст в админ чат наверху экрана</h3>
         <h2>Галерея -</h2>
           <div class="gallery-1">
           <section class="gallery">
@@ -981,19 +994,53 @@
       <div id="content-5">
         <h1>Команда - ban [Стим айди 64/Имя игрока/IP игрока] [Время(h,d,y)] Причина Бана</h1>
         <h5 style="">Писать без скобочек!</h5>
-        <h4>Банит игрока на время на сервере</h4>
+        <h3>Банит игрока на время на сервере</h3>
       </div>
       <div id="content-6">
         <h1>Команда - oban [Стим айди 64/IP игрока] [Время(h,d,y)] Причина Бана</h1>
         <h5>Писать без скобочек!</h5>
-        <h4>Банит игрока на время на сервере</h4>
+        <h3>Банит игрока во оффлайне</h3>
       </div>
       <div id="content-7">
         <h1>Команда - speak/icom</h1>
-        <h4>С помощью этой команды можно говорить в интеркоме на расстоянии. Чтобы вкл/выкл надо прописать команду заново.</h4>
+        <h3>С помощью этой команды можно говорить в интеркоме на расстоянии. Чтобы вкл/выкл надо прописать команду заново.</h3>
         <iframe style="border-radius: 10px;" width="793" height="445" src="https://www.youtube.com/embed/aYCXLoiKKgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <div class="menu-body">
+      <div id="content-8">
+        <h1>cassie (текст)</h1>
+        <h3>C.A.S.S.I.E. используемая этой командой, отделена от C.A.S.S.I.E. которая делает обычные объявления в игре(например прибытие подкрепления МОГ), эта команда будет воспроизводить всё доступное, включая другие слова "cassie".</h3>
+        <a style="text-decoration: none;" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2220087668"><div class="dynamiclink_box noPopup webguide_item ugc">
+  <img class="dynamiclink_preview" src="https://steamuserimages-a.akamaihd.net/ugc/1622940601161532467/FBBC3D472320B360158B4ACDBDD6CEB496FEF62C/?imw=88&amp;imh=88&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true">
+  <div class="dynamiclink_content">
+    <div class="dynamiclink_name">C.A.S.S.I.E. - Все команды&nbsp;</div>
+    <div><span class="dynamiclink_type">Руководство по SCP: Secret Laboratory</span></div></a>
+    <a style="text-decoration: none;" target="_blank" href="http://steamcommunity.com/profiles/76561198013366120"><div class="dynamiclink_author">Автор: <span class="dynamiclink_authorname">SCP-056</span></div></a>
+    <a style="text-decoration: none;" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2220087668"><div class="dynamiclink_description">
+      [Обновлено для Parabellum] Руководство, описывающее команду "cassie", доступную через Text-based remote Admin version Ссылка на оригинал: https://steamcommunity.com/sharedfiles/filedetails/?id=1577299753   </div></a>
+  </div>
+</div>
+      </div>
+      <div id="content-9">
+        <h1>cassie_sl (текст)</h1>
+        <h3>C.A.S.S.I.E. используемая этой командой, отделена от C.A.S.S.I.E. которая делает обычные объявления в игре(например прибытие подкрепления МОГ), эта команда будет воспроизводить всё доступное, включая другие слова "cassie_sl".<br>
+        Команда cassie_sl отличается от cassie тем, что cassie_sl начинает сразу говорить фразу, без начального оповещения.</h3>
+        <a style="text-decoration: none;" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2220087668"><div class="dynamiclink_box noPopup webguide_item ugc">
+  <img class="dynamiclink_preview" src="https://steamuserimages-a.akamaihd.net/ugc/1622940601161532467/FBBC3D472320B360158B4ACDBDD6CEB496FEF62C/?imw=88&amp;imh=88&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true">
+  <div class="dynamiclink_content">
+    <div class="dynamiclink_name">C.A.S.S.I.E. - Все команды&nbsp;</div>
+    <div><span class="dynamiclink_type">Руководство по SCP: Secret Laboratory</span></div></a>
+    <a style="text-decoration: none;" target="_blank" href="http://steamcommunity.com/profiles/76561198013366120"><div class="dynamiclink_author">Автор: <span class="dynamiclink_authorname">SCP-056</span></div></a>
+    <a style="text-decoration: none;" target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2220087668"><div class="dynamiclink_description">
+      [Обновлено для Parabellum] Руководство, описывающее команду "cassie", доступную через Text-based remote Admin version Ссылка на оригинал: https://steamcommunity.com/sharedfiles/filedetails/?id=1577299753   </div></a>
+  </div>
+</div>
+      </div>
+        <div id="content-10">
+          <h1>kill [Айди/Имя игрока]</h1>
+          <h5>Писать без скобочек!</h5>
+        </div>
+        <div class="menu-body">
+        <h2 style="padding-bottom: 25px;">Административные</h2>
         <a href="#content-0"><h3>Панель <br> Администратора</h3></a>
         <a href="#content-1"><h3>Help</h3></a>
         <a href="#content-2"><h3>htag/stag</h3></a>
@@ -1001,12 +1048,14 @@
         <a href="#content-4"><h3>@</h3></a>
         <a href="#content-5"><h3>ban</h3></a>
         <a href="#content-6"><h3>oban</h3></a>
+        <a href="#content-10"><h3>kick</h3></a>
+        <h2></h2>
+        <h2 style="padding-bottom: 38px;">Ивентовые/Весёлые</h2>
         <a href="#content-7"><h3>speak/icom</h3></a>
-        <a href="#content-8"><h3>bc/alert</h3></a>
+        <a href="#content-8"><h3>cassie</h3></a>
+        <a href="#content-9"><h3>cassie_sl</h3></a>
+        <h2></h2>
       </div>
-    </div>
-
-  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
